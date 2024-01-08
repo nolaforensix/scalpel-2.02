@@ -1,0 +1,5 @@
+The files in this directory also support the compilation of a Windows version
+of the Scalpel executable. This build requires mingw as well as libtre4 to be
+installed. A sample makefile named Makefile.win shows how to create the EXE,
+but it may need adjustment depending on your local configuration and install
+paths.

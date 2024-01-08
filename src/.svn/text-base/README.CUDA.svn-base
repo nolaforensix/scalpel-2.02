@@ -1,0 +1,19 @@
+The files in this directory support the compilation of the CUDA enabled version
+of Scalpel. This build has several requirements: 
+
+The current implementation makes of some functionality that requires an NVIDIA 
+card of compute capability 1.2 (or greater).
+
+The CUDA video driver and tooolkit must be installed.
+
+The cutil.h header file must be in /usr/include (or otherwise discoverableable 
+by the g++ invocation in build.sh).
+
+In order to compile with the GPU-based code, you must #define GPU_THREADING and
+undefine MULTICORE_THREADING in scalpel.h.
+
+Assuming the above, you should be able to build the executable by running the
+"build.sh" file in this directory. It will produce an executable named
+scalpel-gpu. This executable functions identically to the standard scalpel build
+except that it will offload header / footer searches to the GPU. Note that regex
+based headers and footers are not supported by the GPU release.
