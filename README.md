@@ -119,14 +119,22 @@ distributed with the Pthreads-win32 - POSIX Threads Library for Win32,
 which is Copyright(C) 1998 John E. Bossom and Copyright(C) 1999,2005
 by Pthreads-win32 contributors.  This library is licensed under the GPL.
 
-Scalpel for Win32 uses the tre regular expression library and is
+For Windows, Scalpel needs the tre regular expression library and is
 distributed with tre-0.7.5, which is licensed under the LGPL.
+
+For other platforms, libtre must be installed manually.  It can be
+obtained from http://laurikari.net/tre/.  On Linux, make install for
+this library installs into /usr/local/lib.  If LD_LIBRARY_PATH doesn't
+include /usr/local/lib, put a line like:
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib in your .bashrc
+or equivalent.
 
 
 SUGGESTIONS:
 
 Bug reports, comments, complaints, and feature requests should be
-directed to the authors via goldenrichard@gmail.com.
+directed to the author via goldenrichard@gmail.com.
 
 
 Cheers,
