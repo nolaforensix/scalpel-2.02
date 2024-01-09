@@ -21,6 +21,10 @@ scalpel3 is now under development and supports not only
 header/footer-based file carving, but also recover of fragmented
 files.  A repo for scalpel3 will appear when it's ready.
 
+** If you're having trouble with the libtre dependency when attempting
+   to install on Linux, see the DEPENDENCIES discussion near the end
+   of this document **
+
 Cheers,
 
 --Golden
