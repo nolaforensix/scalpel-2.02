@@ -18,8 +18,9 @@ used there, while Scalpel is written entirely in C).  This version,
 which contains no Sleuthkit integration, is released under the GPL.
 
 scalpel3 is now under development and supports not only
-header/footer-based file carving, but also recover of fragmented
-files.  A repo for scalpel3 will appear when it's ready.
+header/footer-based file carving, but also much more sophisticated
+recovery options and high-performance recovery of fragmented files.  A
+public repo for scalpel3 will appear when it's ready.
 
 ** If you're having trouble with the libtre dependency when attempting
    to install on Linux, see the DEPENDENCIES discussion near the end
